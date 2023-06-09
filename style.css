@@ -460,7 +460,7 @@ main .cuarta_seccion .imagenes p{
   /* display:none; */
   position: fixed; /* Stay in place */
   z-index: 2; /* Sit on top */
-  display: block;
+  display: none;
   margin: 0 2.5%;
   /* margin: 1% 2.5% 0 2.5%; */
   width: 95%; /* Full width */

@@ -5,9 +5,9 @@ const buttonShow = document.querySelector("#submit");
         event.stopImmediatePropagation();
         const name = document.querySelector("#name")
         const email = document.querySelector("#email")
-        const terminos = document.querySelector("#terminos")
         
         if ((name.value !== "") && (email.value!=="")){
+          event.preventDefault();
           const modal = document.querySelector("#modal")
           modal.style.display = "block";
           name.value == " "

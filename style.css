@@ -456,6 +456,40 @@ main .cuarta_seccion .imagenes p{
   font-family: "IBM Plex Mono", monospace;
   line-height: 26px;
 }
+#modal{
+  /* display:none; */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  display: block;
+  margin: 0 2.5%;
+  /* margin: 1% 2.5% 0 2.5%; */
+  width: 95%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #00F3BB;
+  
+}
+#modal img{
+  margin: 40px auto;
+  display: block;
+  max-width: 400px;
+  width: 100%;
+}
+#modal p{
+  /* color: white; */
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+#close{
+  background: transparent;
+  /* color: white; */
+  float: right;
+  border-radius: 24px;
+  border: 1px solid;
+  padding: 7px 10px;
+  margin: 10px 10px 40px 10px;
+}
 @media screen and (min-width: 1000px) {
   main .sexta_seccion .mensaje img{
     width: unset;

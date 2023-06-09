@@ -1,14 +1,22 @@
-const submit = document.querySelector("#submit")
-submit.addEventListener("click", (e)=>{
-  e.stopImmediatePropagation()
-
-  const titlleInscripcion = document.querySelector("#titlleInscripcion")
-  titlleInscripcion.style.display ="none"
-
-  const form = document.querySelector(".form")
-  form.style.display ="none"
-  
-  const mensaje = document.querySelector(".mensaje")
-  mensaje.style.display="block"
-  
-})
+const buttonShow = document.querySelector("#submit");
+      
+      buttonShow.addEventListener("click",(event)=>{
+        // event.preventDefault();
+        event.stopImmediatePropagation();
+        const name = document.querySelector("#name")
+        const email = document.querySelector("#email")
+        const terminos = document.querySelector("#terminos")
+        
+        if ((name.value !== "") && (email.value!=="")){
+          const modal = document.querySelector("#modal")
+          modal.style.display = "block";
+          name.value == " "
+          email.value == " "
+        }
+        
+      })
+      const close = document.querySelector("#close")
+      close.addEventListener("click",()=>{
+        modal.style.display="none"
+      })
+    
